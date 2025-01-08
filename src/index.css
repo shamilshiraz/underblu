@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+@font-face {
+  font-family: 'ed';
+  src: url('./fonts/EditorsNote-Hairline-iF664322be4e4fb.otf');
+}
+@font-face {
+  font-family: 'ita';
+  src: url('./fonts/EditorsNote-HairlineItalic-iF664322be52ef6.otf');
+}
+@font-face {
+  font-family: 'hel';
+  src: url('./fonts/helvetica-light-587ebe5a59211.ttf');
+}
