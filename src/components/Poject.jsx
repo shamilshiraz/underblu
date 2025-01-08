@@ -32,7 +32,7 @@ export default function Poject({project}) {
             <motion.div variants={anim}
   animate={window.innerWidth >= 768 ? (isActive ? "open" : "closed") : "open"}
                className='overflow-hidden'>
-                <img className="sm:h-[6vw]  max-w-[10vw]" src={`./${src}`}></img>
+                <img className="sm:h-[6vw] h-[8vh]  max-w-[20vw] object-cover" src={`./${src}`}></img>
             </motion.div>
             <p className="ms-[0.75vw]">{title2}</p>
         </div>
