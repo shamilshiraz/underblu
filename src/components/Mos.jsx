@@ -36,7 +36,7 @@ function Mos() {
                 </text>
             </svg>
             <div className="flex flex-col w-full justify-center items-center">
-                <p             data-aos="fade-up"  className='text-3xl sm:text-5xl text-center font-ed text-swblue mt-[-300px]'>Brewing today  <br /> & building tomorrow</p>
+                <p             data-aos="fade-up"  className='text-3xl sm:text-5xl text-center font-ed text-swblue sm:mt-[-300px] mt-[-220px]'>Brewing today  <br /> & building tomorrow</p>
                 <p className='text-sm text-center font-ita text-swblue pt-[50px]'>inspired by the ocean</p>
                             <motion.img src="roundedlogo.png"
              className='h-[15vh] opacity-[0.5]  p-2' alt=""

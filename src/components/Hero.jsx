@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div>
       <div className='bg-[url(../blu.png)] h-[100vh] bg-cover  w-full grid place-content-center flex-end flex '>
-      <svg data-aos="fade-up"  id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394.44 138.94" className='sm:h-[400px] h-[150px] sm:mt-[300px] '>
+      <svg data-aos="fade-up"  id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394.44 138.94" className='sm:h-[50vh] h-[18vh] sm:mt-[300px] '>
 
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
