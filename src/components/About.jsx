@@ -1,24 +1,36 @@
 import React, { useRef } from 'react'
-import { motion, useScroll  } from 'framer-motion';
+import { motion, useScroll, useTransform  } from 'framer-motion'
+
 
 
 function About() {
+  const container=useRef()
+  const{scrollYProgress}=useScroll({
+    target:container,
+    offset:['start end','end start']  
+  })
 
+  const scale=useTransform(scrollYProgress,[0,1],[1,1.4])
 
   return (
-    <div className='h-[auto] text-swblue font-ed'>
+    <div
+    ref={container} 
+     className='h-[auto] text-swblue font-ed flex justify-center flex-col '>
         <div className="pt-[80px]" >
             <div className="about flex sm:text-2xl text-xl justify-center">
-            <img src="./part1.png" className='h-[30px]' alt="" />
-            <img src="./part2.png" className='h-[30px]' alt="" />
+            {/* <img src="./part1.png" className='h-[30px]' alt="" />
+            <img src="./part2.png" className='h-[30px]' alt="" /> */}
             <p>About</p>
-            <img src="./part3.png" className='h-[30px]' alt="" />
-            <img src="./part4.png" className='h-[30px]' alt="" />
+            {/* <img src="./part3.png" className='h-[30px]' alt="" />
+            <img src="./part4.png" className='h-[30px]' alt="" /> */}
             </div>
-            <p             data-aos="fade-up"
- className='flex justify-center text-6xl sm:text-9xl'>Spill the coffee!!</p>
+            <div             data-aos="fade-up"
+ className='flex justify-center text-6xl sm:text-9xl'>
+  <p>Spill the coffee!!</p>
+ </div>
+ 
             <div 
-            className="pt-[5rem] px-2 text-xl sm:text-2xl sm:text-center font-hel">
+            className="pt-[5rem] px-2 text-xl sm:text-2xl sm:text-center sm:mx-[10%] font-hel">
                 <p             data-aos="fade-up"
                 >UnderBlu is a coastal-inspired coffee cafe that blends creativity with community. We value individuality and collaboration in a relaxed yet lively atmosphere, making it the perfect space for both personal reflection and creative collaboration. 
 
@@ -28,9 +40,14 @@ function About() {
                 <p             data-aos="fade-up"
                 >More than  just a cafe, UnderBlu is a space where artists, entrepreneurs,  and anyone looking for connection can support each other and  grow together.</p>
                 <br />
-                <div className="flex justify-center">
-  <img src="./bnwart.jpeg" className="" alt="" />
-</div>
+                <div className="div1 overflow-hidden z-10">
+                <motion.div
+                style={{scale}}
+                 className="div2 w-full h-full flex justify-center">
+                <img src="./bnwart.jpeg" className="" alt="" />
+                 </motion.div>
+                </div>
+
             </div>
             <br />
         </div>

@@ -1,5 +1,5 @@
 // import logo7 from '/logo7.svg'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import About from './components/About'
 import Blends from './components/Blends'
@@ -11,11 +11,29 @@ import Lenis from '@studio-freight/lenis';
 import Mos from './components/Mos'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Loading from './components/Loading'
+
+
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false); 
+
+  useEffect(() => {
+    // Simulate loading by using a timeout, or replace with actual load logic
+    setTimeout(() => {
+      setFadeOut(true); // Trigger fade-up animation
+      setTimeout(() => {
+        setIsLoading(false); // Remove loading screen after fade-up completes
+      }, 1000); // Match this timeout with the animation duration
+    }, 2000); // Adjust this timing as needed
+  }, []);
+
+
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       once: true,
     });
   }, []);
@@ -40,12 +58,23 @@ function App() {
   return (
     <>
 <div>
-  <Nav/>
+{
+        isLoading?(
+         <Loading fadeOut={fadeOut} />
+        ):(
+          <>
+
+<Nav/>
   <Hero/>
   <About/>
   <Putt/>
   <Blends/>
   <Mos/>
+          </>
+
+        )
+      }
+
 </div>
     </>
   )

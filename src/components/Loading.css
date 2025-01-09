@@ -1,0 +1,34 @@
+/* Full-screen video loader */
+.video-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: '#f7f7f7';
+    background-image: url('../bgwh.png');
+    background-size: cover;
+    z-index: 9999;
+    overflow: hidden;
+    transition: all 1s ease; /* Smooth transition */
+    object-fit: cover;
+  }
+  
+  .fade-up {
+    animation: fadeUp 1s forwards;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0.7;
+      transform: translateY(-100vh); /* Move upwards */
+    }
+  }
+  

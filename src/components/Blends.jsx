@@ -39,9 +39,9 @@ function Blends() {
     
         {
     
-          title1: "Mid",
+          title1: "Super",
     
-          title2: "night",
+          title2: "sonic",
     
           src: "almcol.jpg"
     
@@ -49,9 +49,9 @@ function Blends() {
     
         {
     
-          title1: "Mambo",
+          title1: "Home",
     
-          title2: "Mambo",
+          title2: "grown",
     
           src: "rn.jpeg"
     
@@ -63,12 +63,9 @@ function Blends() {
     <div>
       <div className="py-[80px] ">
         <div className="">
+          
         <div className="about flex text-swblue font-ed sm:text-4xl text-2xl justify-center py-[60px]">
-            <img src="./part1.png" className='h-[30px]' alt="" />
-            <img src="./part2.png" className='h-[30px]' alt="" />
             <p>Our blends</p>
-            <img src="./part3.png" className='h-[30px]' alt="" />
-            <img src="./part4.png" className='h-[30px]' alt="" />
             </div>
         {
 

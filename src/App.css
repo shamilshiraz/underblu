@@ -2,6 +2,7 @@ body{
   width: 100vw;
   overflow-x: hidden;
   color: '#005aff';
+  background-color: #f9f9f9;
 }
 [data-aos] {
   pointer-events: none;

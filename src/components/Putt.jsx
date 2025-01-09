@@ -1,8 +1,10 @@
+import { motion } from 'framer-motion'
 import React from 'react'
+
 
 function Putt() {
   return (
-<div className='flex flex-col justify-center w-[100vw] h-[auto]'>
+<div className='flex flex-col justify-center w-[100vw] h-[auto] items-center'>
   <div className="mt-[80px] font-ed text-swblue w-full text-3xl sm:text-5xl flex flex-col justify-center items-center">
     <p             data-aos="fade-up"
     >Putt & coffee!</p>
@@ -10,7 +12,7 @@ function Putt() {
     >Putts brewing story...</p>
   </div>
   <div className="my-[80px] font-ed text-swblue sm:w-full text-3xl sm:text-5xl flex flex-col justify-center items-center h-[] sm:p-5 px-[10px]">
-  <img src="./swputt.jpg" className="h-[150px] w-[250px] mx-auto" alt="" />
+  <img src="./swputt.jpg" className="h-[150px] w-[150px] mx-auto" alt="" />
   </div>
   <div className="font-hel w-full text-swblue text-xl sm:text-2xl px-2 flex flex-col sm:items-center sm:text-center">
   <p             data-aos="fade-up"
@@ -23,7 +25,12 @@ function Putt() {
     More than just a cafe, UnderBlu is a space where artists, entrepreneurs, and anyone looking for connection can support each other and grow together.
   </p>
 </div>
-
+<div className=" w-[200px] h-[50px]   overflow-hidden mt-[100px]">
+        <video autoPlay muted loop className='object-cover w-full h-full'>
+            <source src='./mot.mp4' type='video/mp4'/>
+             this shit is not working
+        </video>
+      </div>
 </div>
 
   )
