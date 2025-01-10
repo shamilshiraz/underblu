@@ -70,8 +70,8 @@ function App() {
   <Hero/>
   <About/>
   <Putt/>
-  <Blends/>
   <Sw/>
+  <Blends/>
   <Mos/>
           </>
 

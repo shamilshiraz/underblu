@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 
 
@@ -18,7 +18,8 @@ const anim = {
 export default function Poject({project}) {
     const[isActive,setIsActive]=useState(false)
     const { title1, title2, src } = project;
-
+    const containerp = useRef(null);
+    const isInview = useInView(containerp, { once: false, offset: ['90vh 00vh'] });
     useEffect(() => {
         // Set isActive to true for mobile devices (screen width less than 768px)
         if (window.innerWidth < 768) {
@@ -26,11 +27,13 @@ export default function Poject({project}) {
         }
       }, []);
     return (
-        <div className='text-swblue   pt-[] pb-[0.8vw] w-full flex justify-center items-center font-ed text-6xl sm:text-8xl'
+        <div
+        ref={containerp}
+         className='text-swblue   pt-[] pb-[0.8vw] w-full flex justify-center items-center font-ed text-6xl sm:text-8xl'
         onMouseEnter={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}}>
             <p className="me-[0.75vw]">{title1}</p>
             <motion.div variants={anim}
-  animate={window.innerWidth >= 768 ? (isActive ? "open" : "closed") : "open"}
+  animate={window.innerWidth >= 768 ? (isActive ? "open" : "closed") : (isInview?'open':'closed')}
                className='overflow-hidden'>
                 <img className="sm:h-[8vw] h-[10vh]  max-w-[20vw] object-cover" src={`./${src}`}></img>
             </motion.div>

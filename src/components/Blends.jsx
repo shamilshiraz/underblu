@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Poject from './Poject'
-
-
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function Blends() {
 
@@ -59,8 +58,21 @@ function Blends() {
     
       ]
 
+      const container=useRef(null)
+
+      const { scrollYProgress: scrollYprogress1 } = useScroll({
+        target: container,
+        offset: [ '90vh end','start start'], // From the bottom to the top of the viewport
+      });
+      const backgroundColor=useTransform(scrollYprogress1,[0,1],['#005aff', '#f7f7f7'])
+
+
   return (
-    <div>
+    <motion.div className=''
+    ref={container}
+    style={{ backgroundColor}}
+    transition={{ duration: 1, ease: 'easeInOut' }}
+    >
       <div className="py-[80px] flex flex-col justify-center items-center ">
         <div className="">
           
@@ -84,8 +96,10 @@ projects.map( project => {
         </video>
       </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
 export default Blends
+
+

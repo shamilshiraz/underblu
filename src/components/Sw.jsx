@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
-import Putt from './Putt';
 
 function Sw() {
   const container = useRef(null);
@@ -22,7 +21,7 @@ function Sw() {
 
 
   return (
-    <div className="h-[300vh] align-items-center flex flex-col ">
+    <div className="h-[200vh] align-items-center flex flex-col ">
 
     <motion.div
       ref={container}
@@ -45,11 +44,13 @@ function Sw() {
 
         </div>
     </motion.div>
-    <motion.div
+    {/* <motion.div
     ref={container2}
      className="h-[100vh] bg-swblue"
      style={{opacity:opacity2}}
-    ></motion.div>
+    >
+
+    </motion.div> */}
     </div>
 
   );
