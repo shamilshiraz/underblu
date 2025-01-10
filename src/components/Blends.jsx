@@ -83,7 +83,7 @@ function Blends() {
 
 projects.map( project => {
 
-  return <Poject project={project}/>
+  return <Poject project={project} container={container}/>
 
 })
 

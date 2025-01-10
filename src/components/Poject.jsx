@@ -15,17 +15,19 @@ const anim = {
 }
 
 
-export default function Poject({project}) {
+export default function Poject({project,container}) {
     const[isActive,setIsActive]=useState(false)
     const { title1, title2, src } = project;
     const containerp = useRef(null);
-    const isInview = useInView(containerp, { once: false, offset: ['90vh 00vh'] });
+    const isInview = useInView(containerp, { once: false,   margin: "100px 300px -200px 0px" });
     useEffect(() => {
         // Set isActive to true for mobile devices (screen width less than 768px)
         if (window.innerWidth < 768) {
           setIsActive(true);
         }
       }, []);
+
+
     return (
         <div
         ref={containerp}
