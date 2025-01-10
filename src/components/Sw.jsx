@@ -34,7 +34,7 @@ function Sw() {
             <img src="./swlogo.png" className='h-[100px] w-[150px]' alt="" />
             <div class="grid sm:grid-cols-2 grid-cols-1 h-[100vh] mt-[100px] w-full">
   <div class="bg-swblue sm:h-full h-[60vh] my-3 flex justify-center items-center overflow-hidden">
-    <img src="./ubluxsw.png" className=' object-contain h-[100%] ' />
+    <img src="./swxblu.png" className=' object-contain h-[100%] ' />
   </div>
   <div class="bg-swblue text-[1.2em] sm:text-4xl sm:h-full h-[60vh] flex justify-center items-center px-4  text-white font-hel">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis optio quisquam magnam, tempore necessitatibus cupiditate soluta quam autem maiores corporis praesentium ut perspiciatis provident sapiente, id eum quae eveniet ex?
