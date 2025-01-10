@@ -10,7 +10,7 @@ function About() {
     offset:['5vh start','end 10vh']  
   })
 
-  const scale=useTransform(scrollYProgress,[0,1],[1.3,1])
+  const scale=useTransform(scrollYProgress,[0,1],[1.2,1])
 
   return (
     <div

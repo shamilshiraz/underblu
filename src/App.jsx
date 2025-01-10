@@ -41,7 +41,7 @@ function App() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2, // Adjust the duration to your preference
+      duration: 1.5, // Adjust the duration to your preference
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
       smooth: true,
     });
