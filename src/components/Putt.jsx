@@ -16,21 +16,16 @@ function Putt() {
   </div>
   <div className="font-hel w-full text-swblue text-xl sm:text-2xl px-2 flex flex-col sm:items-center sm:text-center">
   <p             data-aos="fade-up"
- className='sm:w-[50%] mx-auto'>
+ className=' sm:mx-[10%]'>
     UnderBlu is a coastal-inspired coffee cafe that blends creativity with community. We value individuality and collaboration in a relaxed yet lively atmosphere, making it the perfect space for both personal reflection and creative collaboration.
   </p>
   <br />
   <p             data-aos="fade-up"
- className='sm:w-[50%] mx-auto'>
+ className='sm:mx-[10%]'>
     More than just a cafe, UnderBlu is a space where artists, entrepreneurs, and anyone looking for connection can support each other and grow together.
   </p>
 </div>
-<div className=" w-[200px] h-[50px]   overflow-hidden mt-[100px]">
-        <video autoPlay muted loop className='object-cover w-full h-full'>
-            <source src='./mot.mp4' type='video/mp4'/>
-             this shit is not working
-        </video>
-      </div>
+
 </div>
 
   )

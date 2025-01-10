@@ -14,6 +14,7 @@ function Mos() {
         offset:['start end','end end']
     })
 
+
     useEffect(()=>{
         scrollYProgress.on('change',e=>{
             texts.current.forEach((text,i)=>{
@@ -22,10 +23,11 @@ function Mos() {
         })
     },[])
   return (
+    <div className="">
     <div ref={container}>
                   <svg className="w-full mb-40" viewBox="0 0 250 90">
                 <path fill="none" id="curve" d="m0,88.5c61.37,0,61.5-68,126.5-68,58,0,51,68,123,68"/>
-                <text className="text-[8px] font-ed " style={{fill: "#005aff"}}>
+                <text className="text-[10px] font-ed " style={{fill: "#005aff"}}>
 
                     {
                         [...Array(3)].map((_,i)=>{
@@ -49,6 +51,7 @@ function Mos() {
              }} />
             </div>
             <Footer/>
+    </div>
     </div>
   )
 }

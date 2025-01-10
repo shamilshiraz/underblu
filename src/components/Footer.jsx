@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='h-[15vh] mt-5 w-full bg-swblue flex flex-col justify-around items-center'>
-        <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.53 85.37" className="h-[30px] ">
+    <div className='h-[20vh] p-5 mt-5 w-full bg-swblue flex flex-col justify-around items-center'>
+        <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.53 85.37" className="h-[50px] ">
           <g id="Layer_1-2">
             <g>
               <path className="fill-[#ffffff]" d="M58.45,85.37l-7.46-.04c-.41,0-.77-.25-.93-.63l-5.6-13.87c-.16-.4-.05-.85.27-1.13l33.38-29.38c.58-.5,1.48-.2,1.64.54,1.48,6.8,3,13.17,3.41,15.8,1.93,12.4-1.65,28.71-24.71,28.71Z"/>
@@ -13,10 +13,11 @@ function Footer() {
             </g>
           </g>
         </svg>
-        <div className="flex text-white">
-            <p >underblu.in</p>
-            <p className='px-3'>underblu@gmail.com</p>
-            <p>+91 8945678978</p>
+        
+        <div className="flex text-white text-sm">
+            <p className='pe-1'>underblu.in</p>
+            <p className='px-1 border-x'>underblu@gmail.com</p>
+            <p className='ps-1'>+91 8945678978</p>
         </div>
     </div>
   )

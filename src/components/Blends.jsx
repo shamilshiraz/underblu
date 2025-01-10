@@ -61,7 +61,7 @@ function Blends() {
 
   return (
     <div>
-      <div className="py-[80px] ">
+      <div className="py-[80px] flex flex-col justify-center items-center ">
         <div className="">
           
         <div className="about flex text-swblue font-ed sm:text-4xl text-2xl justify-center py-[60px]">
@@ -77,6 +77,12 @@ projects.map( project => {
 
 }
         </div>
+        <div className=" w-[200px] h-[50px]   overflow-hidden mt-[100px]">
+        <video autoPlay muted loop className='object-cover w-full h-full mt-[0px]'>
+            <source src='./mot.mp4' type='video/mp4'/>
+             this shit is not working
+        </video>
+      </div>
       </div>
     </div>
   )

@@ -12,6 +12,7 @@ import Mos from './components/Mos'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loading from './components/Loading'
+import Sw from './components/Sw'
 
 
 
@@ -61,6 +62,7 @@ function App() {
 {
         isLoading?(
          <Loading fadeOut={fadeOut} />
+        
         ):(
           <>
 
@@ -69,6 +71,7 @@ function App() {
   <About/>
   <Putt/>
   <Blends/>
+  <Sw/>
   <Mos/>
           </>
 

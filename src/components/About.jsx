@@ -7,10 +7,10 @@ function About() {
   const container=useRef()
   const{scrollYProgress}=useScroll({
     target:container,
-    offset:['start end','end start']  
+    offset:['5vh start','end 10vh']  
   })
 
-  const scale=useTransform(scrollYProgress,[0,1],[1,1.4])
+  const scale=useTransform(scrollYProgress,[0,1],[1.3,1])
 
   return (
     <div
@@ -28,6 +28,7 @@ function About() {
  className='flex justify-center text-6xl sm:text-9xl'>
   <p>Spill the coffee!!</p>
  </div>
+ 
  
             <div 
             className="pt-[5rem] px-2 text-xl sm:text-2xl sm:text-center sm:mx-[10%] font-hel">
