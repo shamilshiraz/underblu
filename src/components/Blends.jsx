@@ -79,7 +79,7 @@ projects.map( project => {
         </div>
         <div className=" w-[200px] h-[50px]   overflow-hidden mt-[100px]">
         <video autoPlay muted loop className='object-cover w-full h-full mt-[0px]'>
-            <source src='./mot.mp4' type='video/mp4'/>
+            <source src='./mot.webm' type='video/webm'/>
              this shit is not working
         </video>
       </div>
