@@ -30,7 +30,7 @@ function Sw() {
       style={{ opacity:opacity1 }}
       transition={{ duration: 1, ease: 'easeInOut' }} // Smooth transition
     >
-        <div className="h-[200vh] w-full pt-[30%] flex flex-col items-center px-3 font-hel justify-center ">
+        <div className="h-[200vh] w-full pt-[0%] flex flex-col items-center px-3 font-hel justify-center ">
             <img src="./swlogo.png" className='h-[100px] w-[150px]' alt="" />
             <div class="grid sm:grid-cols-2 grid-cols-1 h-[100vh] mt-[100px] w-full">
   <div class="bg-swblue sm:h-full h-[60vh] my-3 flex justify-center items-center overflow-hidden">
