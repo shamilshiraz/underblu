@@ -1,6 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Poject from './Poject'
 import { motion, useScroll, useTransform } from 'framer-motion'
+
 
 function Blends() {
 
@@ -66,6 +67,20 @@ function Blends() {
       });
       const backgroundColor=useTransform(scrollYprogress1,[0,1],['#005aff', '#f7f7f7'])
 
+      const [currentImage, setCurrentImage] = useState('shapes1.png'); // Initial image
+      const images = ['shapes1.png', 'shapes2.png', 'shapes3.png','shapes4.png']; // Array of image paths
+    
+      useEffect(() => {
+        const intervalId = setInterval(() => {
+          setCurrentImage(prevImage => {
+            const currentIndex = images.indexOf(prevImage);
+            const nextIndex = (currentIndex + 1) % images.length;
+            return images[nextIndex];
+          });
+        }, 500); // Change image every second
+    
+        return () => clearInterval(intervalId); // Cleanup the interval on component unmount
+      }, [images]);
 
   return (
     <motion.div className=''
@@ -89,11 +104,8 @@ projects.map( project => {
 
 }
         </div>
-        <div className=" w-[200px] h-[50px]   overflow-hidden mt-[100px]">
-        <video autoPlay muted loop className='object-cover w-full h-full mt-[0px]'>
-            <source src='./mot.webm' type='video/webm'/>
-             this shit is not working
-        </video>
+        <div className=" w-[125px] h-[50px]   overflow-hidden mt-[100px]">
+          <img src={currentImage} className='object-contain' alt="" />
       </div>
       </div>
     </motion.div>
