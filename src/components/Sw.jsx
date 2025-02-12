@@ -51,7 +51,7 @@ function Sw() {
 </div>
   <div class="bg-swblue text-[1.2em] sm:text-4xl sm:h-full h-[60vh] flex justify-center items-center px-4  text-white font-ita tracking-wider leading-loose	" style={{wordSpacing:'0.5em'}}>
     <p>
-    Southwave is a homegrown brand from Kerala, bringing a fresh new wave to the southside. Rooted in local culture, it blends tradition with modern vibes, creating something uniquely powerful and authentic. The brand celebrates the rich history of Kerala while offering contemporary streetwear that speaks to the bold, creative, and free-spirited. Whether it's a casual day out or an expression of personal style, Southwave’s designs resonate with anyone who values individuality. Always innovative, they keep pushing the boundaries of fashion, making it not just about clothing but a lifestyle.    </p>
+    Southwave is a homegrown brand from Southside, bringing a fresh new wave to fashion. Rooted in local culture, it blends tradition with modern vibes, creating something uniquely powerful and authentic. The brand celebrates the rich history of Kerala while offering contemporary streetwear that speaks to the bold, creative, and free-spirited. Whether it's a casual day out or an expression of personal style, Southwave’s designs resonate with anyone who values individuality.    </p>
     
     </div>
 </div>
