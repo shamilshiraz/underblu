@@ -17,13 +17,11 @@ function Putt() {
   <div className="font-hel w-full text-swblue text-xl sm:text-2xl px-2 flex flex-col sm:items-center sm:text-center">
   <p             data-aos="fade-up"
  className=' sm:mx-[10%]'>
-    UnderBlu is a coastal-inspired coffee cafe that blends creativity with community. We value individuality and collaboration in a relaxed yet lively atmosphere, making it the perfect space for both personal reflection and creative collaboration.
-  </p>
+Putt is one of those rare people who truly lives and breathes coffee. It’s not just about brewing for him; it’s about understanding every detail, from the bean to the cup. Whether it’s a simple pour-over or a rich espresso, he has this natural ability to make every cup feel like a moment to savor. His passion for coffee is infectious—each brew is a reflection of his deep connection to the craft.  </p>
   <br />
   <p             data-aos="fade-up"
  className='sm:mx-[10%]'>
-    More than just a cafe, UnderBlu is a space where artists, entrepreneurs, and anyone looking for connection can support each other and grow together.
-  </p>
+But what really makes Putt special is his creative spark. He doesn’t just follow the usual path; he’s constantly experimenting and thinking outside the box. Whether he’s playing around with new brewing methods or coming up with ideas that no one’s ever tried before, he’s always pushing the envelope. His approach to coffee feels fresh, and it’s clear that every idea he has is born from a place of pure passion and innovation.  </p>
 </div>
 
 </div>

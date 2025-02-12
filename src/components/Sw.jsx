@@ -43,12 +43,15 @@ function Sw() {
   </g>
 </svg>
             <div class="grid sm:grid-cols-2 grid-cols-1 h-[100vh] mt-[100px] w-full">
-  <div class="bg-swblue sm:h-full h-[60vh] my-3 flex justify-center items-center overflow-hidden">
-    <img src="./swxblu.png" className=' object-contain h-[100%] ' />
+            <div class="bg-swblue sm:h-full h-[60vh] my-3 flex justify-center items-center overflow-hidden relative group">
+  <img src="./swxblu.png" class="object-cover h-[100%]" />
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
+    <a href='https://southwave.store/pages/landing' class="text-white text-2xl font-semibold border px-3 rounded-3xl">Shop Now</a>
   </div>
+</div>
   <div class="bg-swblue text-[1.2em] sm:text-4xl sm:h-full h-[60vh] flex justify-center items-center px-4  text-white font-ita tracking-wider leading-loose	" style={{wordSpacing:'0.5em'}}>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis optio quisquam magnam, tempore necessitatibus cupiditate soluta quam autem maiores corporis praesentium ut perspiciatis provident sapiente, id eum quae eveniet ex?
-    Id voluptates architecto quibusdam tempora dolorem! Minima voluptas velit dicta eos? Error eligendi fuga molestiae ad. Vel natus iusto illum dolorum temporibus provident hic, in, cum itaque iste repellendus iure!</p>
+    <p>
+    Southwave is a homegrown brand from Kerala, bringing a fresh new wave to the southside. Rooted in local culture, it blends tradition with modern vibes, creating something uniquely powerful and authentic. The brand celebrates the rich history of Kerala while offering contemporary streetwear that speaks to the bold, creative, and free-spirited. Whether it's a casual day out or an expression of personal style, Southwave’s designs resonate with anyone who values individuality. Always innovative, they keep pushing the boundaries of fashion, making it not just about clothing but a lifestyle.    </p>
     
     </div>
 </div>
